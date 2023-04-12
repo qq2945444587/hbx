@@ -1,0 +1,12 @@
+{
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true,
+  "navigationBarTextStyle": "black",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "index-more-title": "/components/index-more-title/index-more-title",
+    "index-shop": "/components/index-shop/index-shop",
+    "index-cnxh": "/components/index-cnxh/index-cnxh",
+    "index-newshop": "/components/index-newshop/index-newshop"
+  }
+}

@@ -1,0 +1,262 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style":{
+				"navigationBarTitleText":"优咪乐",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom",
+				"app-plus" : {
+					"bounce" : "none",
+					"titleView":false
+				}
+			}
+		}
+		,{
+		    "path" : "pages/my/my",
+		    "style":{
+		    	"navigationBarTitleText":"我的",
+		    	"enablePullDownRefresh": true,
+		    	"navigationStyle": "custom",
+		    	"app-plus" : {
+		    		"bounce" : "none",
+		    		"titleView":false
+		    	}
+		    }
+		}
+		,{
+		    "path" : "pages/classification/classification",
+		    "style":{
+		    	"navigationBarTitleText":"文库",
+		    	"enablePullDownRefresh": false,
+		    	"navigationStyle": "custom",
+		    	"app-plus" : {
+		    		"bounce" : "none",
+		    		"titleView":false
+		    	}
+		    }
+		},
+		{
+		    "path" : "pages/search/search",
+		    "style":{
+		    	"navigationBarTitleText":"搜索",
+		    	"enablePullDownRefresh": false,
+		    	// #ifdef H5
+		    	"navigationStyle": "custom",
+		    	// #endif
+		    	"app-plus" : {
+		    		"bounce" : "none",
+		    		"titleView":false
+		    	}
+		    }
+		},
+		{
+		    "path" : "pages/works/works",
+		    "style":{
+		    	"navigationBarTitleText":"古诗词",
+		    	"enablePullDownRefresh": true,
+		    	// #ifdef H5
+		    	"navigationStyle": "custom",
+		    	// #endif
+		    	"app-plus" : {
+		    		"bounce" : "none",
+		    		"titleView":false
+		    	}
+		    }
+		}
+        ,{
+            "path" : "pages/author/author",
+            "style":{
+            	"navigationBarTitleText":"作者",
+            	"enablePullDownRefresh": true,
+            	// #ifdef H5
+            	"navigationStyle": "custom",
+            	// #endif
+            	"app-plus" : {
+            		"bounce" : "none",
+            		"titleView":false
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/authorDetails/authorDetails",
+            "style":{
+            	"navigationBarTitleText":"作者详情",
+            	"enablePullDownRefresh": true,
+            	// #ifdef H5
+            	"navigationStyle": "custom",
+            	// #endif
+            	"app-plus" : {
+            		"bounce" : "none",
+            		"titleView":false
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/workDetails/workDetails",
+            "style":{
+            	"navigationBarTitleText":"古诗词详情",
+            	"enablePullDownRefresh": true,
+            	// #ifdef H5
+            	"navigationStyle": "custom",
+            	// #endif
+            	"app-plus" : {
+            		"bounce" : "none",
+            		"titleView":false
+            	}
+            }
+        },
+		{
+		    "path" : "pages/webView/webView",
+		    "style":{
+		    	"navigationBarTitleText":"详情",
+		    	"enablePullDownRefresh": false,
+		    	// #ifdef H5
+		    	"navigationStyle": "custom",
+		    	// #endif
+		    	"app-plus" : {
+		    		"bounce" : "none",
+		    		"titleView":false
+		    	}
+		    }
+		},
+		{
+		    "path" : "pages/pictureDetails/pictureDetails",
+		    "style":{
+		    	"navigationBarTitleText":"详情",
+		    	"enablePullDownRefresh": true,
+		    	// #ifdef H5
+		    	"navigationStyle": "custom",
+		    	// #endif
+		    	"app-plus" : {
+		    		"bounce" : "none",
+		    		"titleView":false
+		    	}
+		    }
+		},
+		{
+		    "path" : "pages/noticeDetails/noticeDetails",
+		    "style":{
+		    	"navigationBarTitleText":"详情",
+		    	"enablePullDownRefresh": true,
+		    	// #ifdef H5
+		    	"navigationStyle": "custom",
+		    	// #endif
+		    	"app-plus" : {
+		    		"bounce" : "none",
+		    		"titleView":false
+		    	}
+		    }
+		},
+		{
+		    "path" : "pages/aboutUs/aboutUs",
+		    "style":{
+		    	"navigationBarTitleText":"关于我们",
+		    	"enablePullDownRefresh": true,
+		    	// #ifdef H5
+		    	"navigationStyle": "custom",
+		    	// #endif
+		    	"app-plus" : {
+		    		"bounce" : "none",
+		    		"titleView":false
+		    	}
+		    }
+		}
+        ,{
+            "path" : "pages/login/login",
+            "style":{
+            	"navigationBarTitleText":"注册/登录",
+            	"enablePullDownRefresh": false,
+            	// #ifdef H5
+            	"navigationStyle": "custom",
+            	// #endif
+            	"app-plus" : {
+            		"bounce" : "none",
+            		"titleView":false
+            	}
+            }
+        },
+		{
+		    "path" : "pages/collectionWorksList/collectionWorksList",
+		    "style":{
+		    	"navigationBarTitleText":"收藏古诗词",
+		    	"enablePullDownRefresh": true,
+		    	// #ifdef H5
+		    	"navigationStyle": "custom",
+		    	// #endif
+		    	"app-plus" : {
+		    		"bounce" : "none",
+		    		"titleView":false
+		    	}
+		    }
+		},
+		{
+		    "path" : "pages/collectionAuthorList/collectionAuthorList",
+		    "style":{
+		    	"navigationBarTitleText":"收藏作者",
+		    	"enablePullDownRefresh": true,
+		    	// #ifdef H5
+		    	"navigationStyle": "custom",
+		    	// #endif
+		    	"app-plus" : {
+		    		"bounce" : "none",
+		    		"titleView":false
+		    	}
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/workDetailsPoster/workDetailsPoster",
+            "style":{
+            	"navigationBarTitleText":"作品海报",
+            	"enablePullDownRefresh": true,
+            	// #ifdef H5
+            	"navigationStyle": "custom",
+            	// #endif
+            	"app-plus" : {
+            		"bounce" : "none",
+            		"titleView":false
+            	}
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "优咪乐",
+		"navigationBarBackgroundColor": "#ff6b00",
+		"backgroundColor": "#FFFFFF",
+		"backgroundTextStyle": "dark",
+		"navigationBarTextStyle":"white"
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"s-(.*)": "@/components/common/s-$1/s-$1.vue"
+		}
+	},
+	"tabBar":{
+		"backgroundColor": "#FFFFFF",
+		"selectedColor": "#ff6b00",
+		"color": "#999999",
+		"borderStyle": "white", 
+		"position":"bottom",
+		"list":[{
+			"pagePath":"pages/index/index",
+			"iconPath":"static/images/tabBar/index.png",
+			"selectedIconPath":"static/images/tabBar/index@selected.png",
+			"text":"首页" 
+		  },{
+			"pagePath":"pages/classification/classification",
+			"iconPath":"static/images/tabBar/classification.png",
+			"selectedIconPath":"static/images/tabBar/classification@selected.png",
+			"text":"文库"
+		  },{
+			"pagePath":"pages/my/my",
+			"iconPath":"static/images/tabBar/my.png",
+			"selectedIconPath":"static/images/tabBar/my@selected.png",
+			"text":"我的"
+		  }]
+	},
+	"uniIdRouter": {}
+}

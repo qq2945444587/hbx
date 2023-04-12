@@ -1,0 +1,13 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "商品分类",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "component-search": "/components/search/search",
+    "component-quick-nav": "/components/quick-nav/quick-nav",
+    "component-no-data": "/components/no-data/no-data",
+    "component-popup": "/components/popup/popup",
+    "component-badge": "/components/badge/badge"
+  }
+}

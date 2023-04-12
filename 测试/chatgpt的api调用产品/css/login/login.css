@@ -1,0 +1,134 @@
+.main{
+	padding: 30px 0;
+    overflow: hidden auto;
+	background-color: #eaeaea;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+.login_box{
+	width: 1200px;
+	margin: 0 auto;
+}
+.login_box h1{
+	text-align: center;
+	margin: 0px;
+	padding: 10px 30px;
+	font-size: 35px;
+	line-height: 120px;
+	text-shadow: none;
+	/* color: #4a4a4a; */
+}
+.login_form_box{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.login_form{
+	background-color: rgba(255,255,255,.8);
+	border-radius: 20px;
+}
+.form{
+	width: 345px;
+	padding: 40px 60px;
+}
+.login_type{
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+.count_box{
+	 position: relative;
+	 margin-bottom: 20px;
+	 
+}
+.count_box:before {
+	content: '*';
+	position: absolute;
+	left: -15px;
+	top: 50%;
+	margin-top: -6px;
+	font-size: 18px;
+	line-height: 1;
+	color: #f00;
+}
+.input_group{
+	position: relative;
+	display: flex;
+	width: 100%;
+	border-collapse: separate;
+}
+.input_icon{
+	    display: table-cell;
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 0;
+	padding: 10px 10px;
+	text-align: center;
+	color: #76838f;
+	border: 1px solid #e4eaec;
+	background-color: #f3f7f9;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.input_style{
+	    float: left;
+	    height: 43px;
+		border-radius: 0px;
+		border-color: #ddd;
+		position: relative;
+		width: 100%;
+		z-index: 2;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+		font-size: 20px;
+		line-height: 43px;
+		display: block;
+		padding: 10px 10px;
+		color: #76838f;
+		border: 1px solid #e4eaec;
+		border-left: none;
+		/* border-radius: 0 10px 10px 0px ; */
+		background-color: #fff;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box
+}
+.inpy{
+	width: 70%;
+}
+.get_yz{
+	cursor: pointer;
+	position: absolute;
+    line-height: 26px;
+    background-color: white;
+    height: 80%;
+    right: 0;
+    top: 7px;
+    color: #409eff;
+    z-index: 10;
+    padding: 0 10px;
+	border: none;
+}
+.buttons_box{
+	width: 100%;
+	text-align: center;
+}
+.buttons{
+    background-color: #62a8ea;
+	width: 288px;
+	height: 46px;
+	color: white;
+	font-size: 20px;
+	line-height: 18px;
+}
+input[type=text]:focus {
+	outline: none;
+}
+input[type=submit]{
+	border: none;
+}

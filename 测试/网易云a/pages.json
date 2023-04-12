@@ -1,0 +1,67 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"enablePullDownRefresh": false, // 当前页面是否开启下拉
+				 "onReachBottomDistance" : 70 ,// 下拉距离顶部的距离
+				 "navigationBarTextStyle" : "black",
+				 "backgroundTextStyle": "dark",
+				 "scrollIndicator": "none", // 在该页APP平台不显示滚动条
+				"app-plus": {
+					"scrollIndicator": "none" // 在该页APP平台不显示滚动条
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mrtj/mrtj",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff",
+		"scrollIndicator": "none",
+		"rpxCalcIncludeWidth":9999,
+		"rpxCalcMaxDeviceWidth": 960,
+		"rpxCalcBaseDeviceWidth": 375,
+		"rpxCalcIncludeWidth": 750,
+		"app-plus": {
+			"scrollIndicator": "none" // 在该页APP平台不显示滚动条
+		}
+	},
+	"uniIdRouter": {}
+}

@@ -1,0 +1,323 @@
+/**
+ * 头部
+ */
+.header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 100rpx;
+    border-bottom-right-radius: 100rpx;
+    height: 310rpx;
+    /* #ifdef MP-WEIXIN || MP-BAIDU || MP-QQ || MP-KUAISHOU */
+    height: 360rpx;
+    /* #endif */
+}
+/**
+ * 顶部
+ */
+.header-top {
+    padding-right: 250rpx;
+    /* #ifdef MP-ALIPAY || MP-TOUTIAO */
+    padding-top: 20rpx !important;
+    padding-right: 20rpx;
+    /* #endif */
+    /* #ifdef H5 || APP */
+    padding-right: 20rpx;
+    /* #endif */
+    padding-bottom: 10px;
+}
+.nav-back {
+    width: 30px;
+    background: rgb(0 0 0 / 60%);
+    height: 30px;
+    line-height: 30px;
+}
+.nav-search {
+    width: calc(100% - 90rpx);
+    /* #ifdef MP-ALIPAY || MP-TOUTIAO || H5 || APP */
+    width: 100%;
+    /* #endif */
+}
+
+/**
+ * 头部内容
+ */
+.header-content {
+    top: 140rpx;
+    /* #ifdef MP-WEIXIN || MP-BAIDU || MP-QQ || MP-KUAISHOU */
+    top: 200rpx;
+    /* #endif */
+    width: calc(100% - 80rpx);
+    box-shadow: 0 0 8px rgb(0 0 0 / 6%);
+}
+.header-content .address-content {
+    width: calc(100% - 220rpx);
+}
+.header-content .icon-list {
+    right: 20rpx;
+    bottom: 20rpx;
+}
+.header-content .icon-list .icon-item {
+    width: 50rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+}
+.header-content .icon-item .badge-icon {
+    top: -10px;
+    right: 2px;
+}
+.header-content .icon-list .icon-item:not(:last-child) {
+    margin-right: 15rpx;
+}
+.header-content .logo {
+    width: 110rpx;
+    height: 110rpx !important;
+}
+.header-content .base-right {
+    width: calc(100% - 130rpx);
+}
+.header-content .base-right .title-length-limit {
+    width: calc(100% - 110rpx);
+}
+.header-content .base-right .use-type-icon {
+    border-top-left-radius: 50rpx;
+    border-bottom-left-radius: 50rpx;
+    top: 20rpx;
+    right: -1px;
+    padding: 5rpx 20rpx;
+    box-shadow: -1px 1px 3px rgb(0 0 0 / 10%);
+}
+
+/**
+ * 桌码
+ */
+.tablecode {
+    background: rgb(255 255 255 / 60%);
+    padding: 2rpx 20rpx;
+    /* #ifdef MP-ALIPAY || MP-TOUTIAO */
+    margin-top: 15rpx;
+    /* #endif */
+}
+
+/**
+ * 中间内容
+ */
+.content {
+    margin-top: 80rpx;
+    height: calc(100vh - 440rpx);
+    /* #ifdef H5 || APP */
+    height: calc(100vh - 390rpx);
+    /* #endif */
+    /* #ifdef MP-ALIPAY || MP-TOUTIAO */
+    height: calc(100vh - 400rpx);
+    /* #endif */
+}
+
+/**
+* 左侧导航
+*/
+.left-content-actual {
+    padding-bottom: 120rpx;
+}
+.left-content {
+    width: 180rpx;
+}
+.left-content .item {
+    height: 80rpx;
+    line-height: 80rpx;
+    padding: 0 10rpx;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    overflow: hidden;
+}
+.left-content .item:not(:last-child) {
+    border-bottom: 1px solid #f1f1f1 !important;
+}
+.left-content .active {
+    background: #f5f5f5;
+    border-width: 0 0 0 3px;
+    border-right: 3px solid #f5f5f5 !important;
+}
+.left-content .badge-icon {
+    top: -16rpx;
+    right: 26rpx;
+}
+
+/**
+*  右侧内容
+*/
+.right-content-actual {
+    padding-bottom: 105rpx;
+}
+.right-content {
+    width: calc(100% - 220rpx);    
+}
+.right-content-actual .word-list {
+    position: sticky;
+    top: 0;
+    right: 0;
+    background: #f5f5f5;
+    z-index: 1;
+    padding: 0 1px 20rpx 1px;
+}
+.goods-list .goods-img {
+    width: 160rpx;
+    height: 160rpx !important;
+}
+.goods-list .goods-base {
+    width: calc(100% - 180rpx);
+}
+.goods-list .goods-base-content {
+    min-height: 100rpx;
+}
+.goods-list .goods-base .simple-desc {
+    line-height: 30rpx;
+    min-height: 30rpx;
+    max-height: 58rpx;
+}
+.goods-list .goods-base .sales-price {
+    width: calc(100% - 160rpx);
+}
+.goods-list .goods-base .buy-number {
+    min-width: 32rpx;
+}
+
+/**
+ * 底部导航
+ */
+.botton-nav {
+    width: calc(100% - 40rpx);
+    left: auto;
+    bottom: 20rpx;
+    line-height: 80rpx;
+    z-index: 6;
+    max-width: calc(800px - 40rpx);
+    margin-left: 20rpx;
+}
+.botton-nav .cart .badge-icon {
+    top: -20rpx;
+    right: -2rpx;
+}
+.botton-nav .cart-total-price {
+    width: calc(100% - 260rpx);
+}
+.botton-nav button {
+    top: 0;
+    right: 0;
+    line-height: 88rpx;
+    height: 88rpx;
+    border: 0;
+    /* #ifdef MP-QQ */
+    padding-top: 0;
+    padding-bottom: 0;
+    /* #endif */
+}
+
+/**
+ * 购物车
+ */
+.cart-mask {
+    left: 0;
+    top: 0;
+    background: rgb(0, 0, 0, 0.6);
+    z-index: 5;
+}
+.cart-content {
+    left: auto;
+    bottom: 130rpx;
+    width: calc(100% - 40rpx);
+    z-index: 6;
+    max-width: calc(800px - 40rpx);
+    margin-left: 20rpx;
+}
+.cart-content .cart-list {
+    max-height: 60vh;
+}
+.cart-content .cart-list .goods-img {
+    width: 120rpx;
+    height: 120rpx !important;
+}
+.cart-content .cart-list .goods-base {
+    width: calc(100% - 140rpx);
+}
+.cart-content .cart-list .goods-base-content {
+    min-height: 60rpx;
+}
+
+/**
+ * 规格选择弹窗
+ */
+.goods-spec-popup .close {
+    position: absolute;
+    top: 20rpx;
+    right: 20rpx;
+    z-index: 2;
+}
+.goods-spec-popup-base {
+    height: 180rpx;
+}
+.goods-spec-popup-base image {
+    width: 150rpx;
+    height: 150rpx;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.goods-spec-popup-base-content {
+    position: absolute;
+    left: 170rpx;
+    top: 0;
+}
+.goods-spec-popup-base-content .goods-price {
+    margin-bottom: 10rpx;
+}
+.goods-spec-popup-content {
+    max-height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 20rpx;
+}
+.goods-spec-choose .item {
+    margin-bottom: 30rpx;
+    padding-bottom: 30rpx;
+}
+.goods-spec-choose .item .spec button {
+    margin-right: 25rpx;
+    padding: 0 30rpx;
+    background-color: #f5f5f5;
+    color: #666;
+    height: 60rpx;
+    line-height: 50rpx !important;
+    border: 1px solid #ccc;
+}
+.goods-spec-choose .item .spec button image {
+    width: 40rpx;
+    height: 40rpx !important;
+}
+.spec-dont-choose {
+    color: #b4b3b3 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #ebeaea !important;
+}
+.spec-dont-choose image {
+    opacity: 0.5;
+}
+.spec-items-disabled {
+    color: #d2cfcf !important;
+    background-color: #ffffff !important;
+    border: 1px dashed #d5d5d5 !important;
+}
+.spec-items-disabled image {
+    opacity: 0.3;
+}
+.goods-spec-choose .item .spec button,
+.goods-spec-popup-submit {
+    border-radius: 50rpx;
+}
+.goods-spec-popup-submit {
+    height: 85rpx;
+    line-height: 85rpx;
+    font-size: 36rpx;
+    margin-top: 20rpx;
+    border: 0;
+}

@@ -1,0 +1,105 @@
+.main {
+	padding: 40px 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+.main h1 {
+	padding: 15px 0;
+	font-size: 30px;
+	color: #212121;
+	text-align: center;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.main p {
+	text-align: center;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.detail_main_box {
+	width: 1200px;
+	margin: 20px auto;
+}
+
+.table_tab_box {
+	display: flex;
+	margin: 30px 0;
+}
+
+.table_tab_box .table {
+	cursor: pointer;
+	border: none;
+	color: #333;
+	padding: 15px;
+	background: #ffffff;
+	font-size: 16px;
+}
+
+.table_tab_box .active {
+	color: white;
+	background: #076ce0;
+}
+
+.tabs-box {
+	display: none;
+}
+
+.table_tab_content .boxOne {
+	display: block;
+}
+
+
+
+/* 表格 */
+.divs {
+	overflow: auto;
+	width: 1200px;
+	max-height: 400px;
+	border: 1px solid gray;
+	border-bottom: 0;
+	border-right: 0;
+
+}
+td,
+th {
+	padding: 20px 20px;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	width: 100px;
+	height: 30px;
+	box-sizing: border-box;
+}
+th {
+	background-color: lightblue;
+}
+table {
+	border-collapse: separate;
+	table-layout: fixed;
+	width: 100%;
+}
+
+td:first-child,
+th:first-child {
+	position: sticky;
+	left: 0;
+	z-index: 1;
+}
+
+thead tr th {
+	position: sticky;
+	top: 0;
+	text-align: center;
+	padding: 20px 0;
+	/* 第一列最上 */
+}
+
+th:first-child {
+	z-index: 2;
+	background-color: lightblue;
+}

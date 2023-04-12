@@ -1,0 +1,38 @@
+{
+    "name": "shopro-plus",
+    "version": "v1.3.9",
+    "main": "main.js",
+    "scripts": {
+        "test": ""
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "keywords": [
+        "分销商城",
+        "拼团秒杀",
+        "积分商城",
+        "全端分享",
+        "路由拦截"
+    ],
+    "author": "",
+    "license": "ISC",
+    "homepage": "",
+    "dependencies": {
+        "jweixin-module": "^1.6.0",
+        "uni-read-pages": "^1.0.5",
+        "uni-simple-router": "^2.0.6",
+        "vconsole": "^3.7.0"
+    },
+    "description": "当前版本已弃用，vue3版本已上线 插件地址:https://ext.dcloud.net.cn/plugin?id=10180",
+    "devDependencies": [],
+    "id": "itmonkey-shopro",
+    "displayName": "Shopro分销商城（前端）vue3版本已更新",
+    "dcloudext": {
+        "category": [
+            "uni-app前端模板",
+            "uni-app前端项目模板"
+        ]
+    }
+}

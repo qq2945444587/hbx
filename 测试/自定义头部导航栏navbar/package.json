@@ -1,0 +1,15 @@
+{
+    "id": "hello-xiaochengxutoubu",
+    "name": "自定义头部导航栏navbar",
+    "version": "1.0.1",
+    "description": "自定义头部导航栏navbar",
+    "keywords": [
+        "自定义头部导航栏navbar"
+    ],
+    "dcloudext": {
+        "category": [
+            "uni-app前端模板",
+            "uni-app前端项目模板"
+        ]
+    }
+}

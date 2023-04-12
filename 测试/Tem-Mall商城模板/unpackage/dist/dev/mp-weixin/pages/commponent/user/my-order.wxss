@@ -1,0 +1,25 @@
+.my_order.data-v-75de76ba {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.order_btnbox.data-v-75de76ba {
+  display: flex;
+  align-items: center;
+}
+.order_btns.data-v-75de76ba {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin: 10rpx 0 20rpx;
+  padding: 20rpx 0 10rpx;
+  font-size: 24rpx;
+  color: #75787d;
+  line-height: 40rpx;
+}
+.order_btns text.data-v-75de76ba {
+  font-size: 36rpx;
+}
+

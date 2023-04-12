@@ -1,0 +1,91 @@
+
+.new_shop_list.data-v-13394a88 {
+	display: flex;
+	flex-direction: column;
+	padding: 20rpx;
+	border-radius: 10px;
+	margin-bottom: 20rpx;
+	background: white;
+}
+.new_shop_top.data-v-13394a88 {
+	display: flex;
+	position: relative;
+}
+.new_shop_Img.data-v-13394a88 {
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	border: 1px solid #f7f7f7;
+	overflow: hidden;
+}
+.bq_box.data-v-13394a88 {
+	display: inline-block;
+	color: #f6c133;
+	padding: 0 10rpx;
+	border: 1px solid #f6c133;
+	font-size: 22rpx;
+	border-radius: 26px;
+}
+.bq_font.data-v-13394a88 {
+	font-size: 32rpx;
+	font-weight: bold;
+	margin-left: 22rpx;
+}
+.yy_time.data-v-13394a88 {
+	font-size: 22rpx;
+	margin-top: 10rpx;
+	color: #9A9A9A;
+}
+.new_shop_icon.data-v-13394a88 {
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	background-color: #f6c133;
+	border-top-left-radius: 26rpx;
+	border-bottom-left-radius: 26rpx;
+	font-size: 22rpx;
+	color: white;
+	top: -2rpx;
+	right: -20rpx;
+	padding: 8rpx 20rpx;
+	box-shadow: -1px 1px 3px rgb(0 0 0 / 10%);
+}
+.new_shop_bottom.data-v-13394a88 {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20rpx;
+	align-items: flex-end;
+}
+.ip_class.data-v-13394a88 {
+	font-size: 24rpx;
+	color: rgb(141, 141, 141);
+}
+.ip_class .icon-dingweixiao.data-v-13394a88 {
+	font-size: 24rpx;
+}
+.three_icon.data-v-13394a88 {
+	display: flex;
+	align-items: center;
+}
+.three_icon .myiconfont.data-v-13394a88 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 52rpx;
+	height: 52rpx;
+	margin-right: 14rpx;
+	border-radius: 50%;
+	font-size: 24rpx;
+	color: white;
+}
+.three_icon .icon-fenxiang.data-v-13394a88 {
+	background-color: #1AAD19;
+}
+.three_icon .icon-dianhua.data-v-13394a88 {
+	background-color: #f6c133;
+}
+.three_icon .icon-aixin1.data-v-13394a88 {
+	background-color: #d6d6d6;
+}
+

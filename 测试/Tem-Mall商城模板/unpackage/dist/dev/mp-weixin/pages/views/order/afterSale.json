@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "申请售后",
+  "navigationBarBackgroundColor": "#F8F8F8",
+  "usingComponents": {
+    "set-times": "/pages/commponent/order/setTime"
+  }
+}

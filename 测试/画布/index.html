@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			html,
+			body {
+				margin: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			canvas {}
+		</style>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="800" height="800" style="border:1px solid #996633;"></canvas>
+	</body>
+	<script>
+		var canvas = document.getElementById('myCanvas');
+		var ctx = canvas.getContext('2d');
+		
+		
+		
+		
+		
+		// let img1 = new Image(),
+		// 	img2 = new Image();
+		// img1.src = 'https://img0.baidu.com/it/u=1416441845,165591988&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500';
+		// img2.src = 'https://img0.baidu.com/it/u=3061851464,2533536213&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500';
+		
+		// // 加载img1
+		// let pm1 = new Promise((res,rej)=>{
+		//   img1.onload = ()=>{
+		// 	res();
+		//   }
+		// });
+		// // 加载img2
+		// let pm2 = new Promise((res,rej)=>{
+		//   img2.onload = ()=>{
+		// 	res();
+		//   }
+		// });
+		
+		// // 两张图片都加载完成后绘制于Canva中
+		// let drawAllImg = Promise.all([pm1, pm2]).then((res)=>{
+		//   ctx.drawImage(img2, 0, 0);
+		//   ctx.drawImage(img1, 30, 30, 300, 200);
+		// });
+		
+	
+
+		// ctx.strokeStyle = 'blue'
+		// ctx.moveTo(20, 100)
+		// ctx.lineTo(200, 100)
+		// ctx.stroke()
+
+		// ctx.beginPath()
+		// ctx.moveTo(20, 120)
+		// ctx.lineTo(200, 120)
+		// ctx.lineWidth = 10
+		// ctx.lineCap = 'round'
+		// ctx.stroke()
+
+
+		// ctx.beginPath()
+		// // 绘制直线
+		// ctx.moveTo(100, 200)
+		// ctx.lineTo(200, 400)
+
+		// // 修改直线的宽度
+		// ctx.lineWidth = 20
+
+		// // 修改直线的颜色
+		// ctx.strokeStyle = 'pink'
+
+		// // 修改直线两端样式
+		// ctx.lineCap = 'round' // 默认: butt; 圆形: round; 方形: square
+
+		// ctx.stroke()
+
+		// ctx.beginPath()
+		// ctx.fillStyle = 'red'
+		// ctx.fillRect(350, 50, 200, 100)
+		// 		ctx.strokeStyle = 'pink'
+		// ctx.strokeRect(350, 50, 200, 100)
+
+
+
+		// ctx.fillStyle = 'pink' // 设置填充颜色
+		// ctx.fillRect(50, 50, 200, 200) // 填充矩形
+		// ctx.clearRect(60, 60, 180, 90) // 清空矩形
+
+
+		// ctx.moveTo(150, 50)
+		// ctx.lineTo(250, 100)
+		// ctx.lineTo(150, 150)
+		// ctx.lineTo(50, 100)
+		// ctx.closePath()
+		// ctx.stroke()
+		
+		
+		
+	</script>
+</html>

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "所有评价",
+  "navigationBarBackgroundColor": "#F8F8F8",
+  "usingComponents": {
+    "tabs": "/pages/commponent/public/tabs",
+    "loading": "/pages/commponent/public/loading"
+  }
+}

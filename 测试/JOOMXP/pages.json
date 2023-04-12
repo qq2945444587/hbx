@@ -1,0 +1,127 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true, // 当前页面是否开启下拉
+				// "onReachBottomDistance" : 70 ,// 下拉距离顶部的距离
+				"navigationBarTextStyle": "black",
+				"backgroundTextStyle": "dark",
+				"app-plus": {
+					"pullToRefresh": {
+						"support": true,
+						"color": "#ff3333",
+						"style": "default",
+						"contentdown": {
+							"caption": "下拉可更新数据"
+						},
+						"contentover": {
+							"caption": "释放可刷新首页数据"
+						},
+						"contentrefresh": {
+							"caption": "正在刷新"
+						}
+					}
+				}
+			}
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true, // 当前页面是否开启下拉
+				"navigationBarTitleText": "用户中心"
+			}
+
+		}
+	    ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {    
+				  // #ifdef MP-BAIDU || MP-QQ || MP-KUAISHOU || H5 || APP
+				"navigationStyle": "custom",
+				// #endif
+                "navigationBarTitleText": "登录注册",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/classify/classify",
+            "style" :                                                                                    
+            {
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom",
+                "navigationBarTitleText": "商品分类"
+            }
+            
+        }
+        ,{
+            "path" : "pages/cart/cart",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true, // 当前页面是否开启下拉
+                "navigationBarTitleText": "购物车"
+            }
+            
+        }
+        ,{
+            "path" : "pages/goods-detail/goods-detail",
+            "style" :                                                                                    
+            {
+				"enablePullDownRefresh": true, // 当前页面是否开启下拉
+				"navigationStyle": "custom",
+                "navigationBarTitleText": "商品详情"
+            }
+            
+        }
+        ,{
+            "path" : "pages/cart-page/cart-page",
+            "style" :                                                                                    
+            {
+				"enablePullDownRefresh": true, // 当前页面是否开启下拉
+				"navigationStyle": "custom",
+                "navigationBarTitleText": "购物车"
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "JOOMXP",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	     "color": "#8a8a8a",
+		"selectedColor": "#f6c133",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/images/common/tabbar/home.png",
+				"selectedIconPath": "static/images/yellow/tabbar/home.png"
+			},
+			{
+					"pagePath": "pages/classify/classify",
+					"text": "分类",
+					"iconPath": "static/images/common/tabbar/category.png",
+					"selectedIconPath": "static/images/yellow/tabbar/category.png"
+			},
+			{
+					"pagePath": "pages/cart/cart",
+					"text": "购物车",
+					"iconPath": "static/images/common/tabbar/cart.png",
+					"selectedIconPath": "static/images/yellow/tabbar/cart.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/images/common/tabbar/user.png",
+				"selectedIconPath": "static/images/yellow/tabbar/user.png"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}

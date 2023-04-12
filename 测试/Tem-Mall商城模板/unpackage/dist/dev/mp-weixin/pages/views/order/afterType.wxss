@@ -1,0 +1,106 @@
+.after_type.data-v-b5e5892a {
+  padding: 20rpx 0;
+  background-color: #fff;
+}
+.goods_data.data-v-b5e5892a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0 4%;
+}
+.goods_data image.data-v-b5e5892a {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 8rpx;
+}
+.goods_data .right.data-v-b5e5892a {
+  margin-left: 20rpx;
+  width: 80%;
+}
+.goods_data .right .goods_name.data-v-b5e5892a {
+  font-size: 26rpx;
+  font-weight: bold;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goods_data .right .goods_sku.data-v-b5e5892a {
+  font-size: 24rpx;
+  color: #999999;
+  margin-top: 5rpx;
+}
+.goods_data .right .goods_price.data-v-b5e5892a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 28rpx;
+  color: #999;
+  margin-top: 5rpx;
+}
+.place.data-v-b5e5892a {
+  height: 20rpx;
+  width: 100%;
+  margin-top: 20rpx;
+  border-bottom: 2rpx dashed #EEEEEE;
+}
+._type.data-v-b5e5892a {
+  margin: 0 4%;
+  border-radius: 20rpx;
+  box-shadow: 0rpx 0rpx 10rpx #DDDDDD;
+  margin-top: 30rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+._type .type_list.data-v-b5e5892a {
+  height: 152rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #EEEEEE;
+  padding: 20rpx 0;
+}
+._type .type_list.data-v-b5e5892a:last-of-type {
+  border-bottom: none;
+}
+._type .type_list.data-v-b5e5892a:active {
+  opacity: .8;
+}
+._type .type_list .type_left.data-v-b5e5892a {
+  display: flex;
+  align-items: center;
+}
+._type .type_list .type_left .type_img.data-v-b5e5892a {
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+}
+._type .type_list .type_left .type_text.data-v-b5e5892a {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #202020;
+  margin-left: 20rpx;
+}
+._type .type_list .type_right.data-v-b5e5892a {
+  display: flex;
+  align-items: center;
+}
+._type .type_list .type_right .left_p.data-v-b5e5892a {
+  margin-right: 10rpx;
+}
+._type .type_list .type_right .left_p ._p.data-v-b5e5892a {
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  text-align: center;
+  color: #999999;
+}
+._type .type_list .type_right image.data-v-b5e5892a {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  float: right;
+}
+

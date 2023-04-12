@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "shopro-navbar": "/components/shopro-navbar/shopro-navbar",
+    "u-parse": "/uview-ui/components/u-parse/u-parse"
+  }
+}

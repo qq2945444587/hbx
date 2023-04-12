@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/index",
+    "pages/my/index",
+    "pages/search/index",
+    "pages/searchList/index",
+    "pages/play/index",
+    "pages/songDetail/index",
+    "pages/dayRecommend/index",
+    "pages/songList/index",
+    "pages/singer/index",
+    "pages/rankList/index",
+    "pages/singerPlayList/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#ffffff"
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "permission": {},
+  "usingComponents": {
+    "music-control": "/components/musicControl/index",
+    "box-title": "/components/boxTitle/index",
+    "tab-bar": "/components/tabBar/index",
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

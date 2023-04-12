@@ -1,0 +1,55 @@
+/*
+* 三级联动
+*/
+.select-address {
+    box-sizing: border-box;
+    height: 70rpx;
+    line-height: 70rpx;
+    padding: 0 10rpx;
+}
+.select-address .section {
+    width: 33.33%;
+    box-sizing: border-box;
+}
+.select-address .section:not(:first-child) {
+    padding: 0 5rpx;
+}
+
+/**
+ * 地址信息
+ */
+.default-checkbox image {
+    width: 35rpx;
+    height: 35rpx !important;
+}
+.address-value {
+    padding-right: 110rpx;
+}
+.map-icon {
+    bottom: 0;
+    right: 0;
+    width: 90rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.auto-discern {
+    bottom: 20rpx;
+    right: 20rpx;
+    z-index: 2;
+}
+.auto-discern button {
+    line-height: inherit;
+    padding: 5rpx 20rpx !important;
+}
+
+/*
+* 身份信息
+*/
+.idcard-container {
+    background: #e6e6e6;
+}
+.idcard-container .form-upload-data .item image {
+    width: 256rpx;
+    height: 170rpx;
+    border: 1px dashed #c2c2c2;
+}

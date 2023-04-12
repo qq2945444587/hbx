@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "编辑取件地址",
+  "navigationBarBackgroundColor": "#F8F8F8",
+  "usingComponents": {
+    "setcity": "/pages/commponent/public/setCity/nyz_area_picker",
+    "loading": "/pages/commponent/public/loading"
+  }
+}

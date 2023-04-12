@@ -1,0 +1,12 @@
+{
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "门店详情",
+  "usingComponents": {
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "component-no-data": "/components/no-data/no-data",
+    "component-search": "/components/search/search",
+    "component-badge": "/components/badge/badge",
+    "component-popup": "/components/popup/popup"
+  }
+}

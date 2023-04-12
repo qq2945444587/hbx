@@ -1,0 +1,16 @@
+{
+    "id": "songbo-gushi",
+    "name": "优咪乐古诗词",
+    "displayName": "优咪乐古诗词",
+    "version": "1.1.6",
+    "description": "基于uniapp开发优咪乐古诗词的应用，提供了58w的古诗词和3.88w作者，并生成海报，古诗词朗读。加群vx：songbo236589",
+    "keywords": [
+        "古诗词"
+    ],
+    "dcloudext": {
+        "category": [
+            "uni-app前端模板",
+            "uni-app前端项目模板"
+        ]
+    }
+}

@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.singerInfo-container.data-v-917a3eec {
+  width: 100%;
+  height: 100%;
+}
+.singerInfo-container .vague-wrapper.data-v-917a3eec {
+  height: 30%;
+  width: 100%;
+  position: relative;
+}
+.singerInfo-container .vague-wrapper .head-title.data-v-917a3eec {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.singerInfo-container .vague-wrapper .day-recommend-info.data-v-917a3eec {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.singerInfo-container .vague-wrapper .day-recommend-info .bgImg.data-v-917a3eec {
+  width: 200rpx;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.singerInfo-container .vague-wrapper .day-recommend-info .description-wrapper.data-v-917a3eec {
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.singerInfo-container .vague-wrapper .day-recommend-info .description-wrapper .title.data-v-917a3eec {
+  font-size: 40rpx;
+  color: #fff;
+}
+.singerInfo-container .vague-wrapper .day-recommend-info .description-wrapper .tags.data-v-917a3eec {
+  margin: 15px 0;
+}
+.singerInfo-container .vague-wrapper .day-recommend-info .description-wrapper .tags .tag-text.data-v-917a3eec {
+  background-color: #f84e51;
+  color: #fff;
+}
+.singerInfo-container .vague-wrapper .day-recommend-info .description-wrapper .description.data-v-917a3eec {
+  font-size: 24rpx;
+  color: #e1d7f0;
+  margin-top: 17rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 18px;
+}
+.singerInfo-container .recommend-main.data-v-917a3eec {
+  height: 70%;
+  width: 100%;
+  position: relative;
+}
+.singerInfo-container .recommend-main.hasPlayInfo.data-v-917a3eec {
+  height: calc(70% - 110rpx);
+}
+.singerInfo-container .recommend-main .recommend-list.data-v-917a3eec {
+  position: absolute;
+  top: -5%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  border-top-left-radius: 26px;
+  border-top-right-radius: 26px;
+}
+.singerInfo-container .recommend-main .recommend-list .music-title.data-v-917a3eec {
+  padding-left: 20px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.singerInfo-container .recommend-main .recommend-list .music-title .playIcon.data-v-917a3eec {
+  margin-right: 8px;
+  font-size: 40rpx;
+}
+.singerInfo-container .recommend-main .recommend-list .music-title .light-text.data-v-917a3eec {
+  font-size: 24rpx;
+  margin-left: 6px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.singerInfo-container .recommend-main .recommend-list .music-item.data-v-917a3eec {
+  height: 70px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.singerInfo-container .recommend-main .recommend-list .music-item.data-v-917a3eec:last-of-type {
+  margin-bottom: 0;
+}
+.singerInfo-container .recommend-main .recommend-list .music-item.active.data-v-917a3eec {
+  background-image: linear-gradient(to right, rgba(247, 73, 79, 0.1), rgba(247, 73, 79, 0.05));
+}
+.singerInfo-container .recommend-main .recommend-list .music-item.active .music-info .music-name.data-v-917a3eec,
+.singerInfo-container .recommend-main .recommend-list .music-item.active .music-info .small-icon.data-v-917a3eec,
+.singerInfo-container .recommend-main .recommend-list .music-item.active .music-info .music-singer.data-v-917a3eec {
+  color: #f84e51 !important;
+}
+.singerInfo-container .recommend-main .recommend-list .music-item.active .music-info.data-v-917a3eec::before {
+  content: '';
+  width: 4px;
+  height: 65px;
+  background-image: linear-gradient(to bottom, #fd7566, #f7494f);
+  position: absolute;
+  left: 0px;
+  top: 3px;
+}
+.singerInfo-container .recommend-main .recommend-list .music-item .index.data-v-917a3eec {
+  color: #000;
+  margin-right: 3px;
+}
+.singerInfo-container .recommend-main .recommend-list .music-item .music-info.data-v-917a3eec {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: calc(100vw - 135px);
+  text-align: left;
+}
+.singerInfo-container .recommend-main .recommend-list .music-item .music-info .music-name.data-v-917a3eec {
+  font-size: 30rpx;
+  margin-bottom: 7px;
+  color: #000;
+}
+.singerInfo-container .recommend-main .recommend-list .music-item .music-info .music-singer.data-v-917a3eec {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 24rpx;
+  align-items: center;
+}
+.singerInfo-container .recommend-main .recommend-list .music-item .music-info .music-singer .small-icon.data-v-917a3eec {
+  margin-right: 6px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  padding: 1px 3px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+

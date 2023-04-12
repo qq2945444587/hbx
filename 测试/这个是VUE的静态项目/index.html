@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="css/vant.css">
+		<!-- <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script> -->
+		<script src="js/flexible.js"></script>
+		<style>
+
+		</style>
+	</head>
+	<body>
+
+		<div id="app">
+			<van-button class="ww" @click="btnClick" type="primary">主要按钮</van-button>
+			<van-cell title="选择单个日期" :value="date" @click="show = true" /></van-cell>
+			<van-calendar v-model="show" @confirm="onConfirm" /></van-calendar>
+
+
+
+			<van-password-input style="margin-top: 20px;" :value="value" info="密码为 6 位数字" :error-info="errorInfo" :focused="showKeyboard"
+			:mask="false" @focus="showKeyboard = true" /></van-password-input>
+			<van-number-keyboard v-model="value" :show="showKeyboard"
+				@blur="showKeyboard = false" /></van-number-keyboard>
+
+
+
+            <van-area
+              title="标题"
+              :area-list="areaList"
+			  @confirm="city"
+              :columns-placeholder="['请选择', '请选择', '请选择']"
+            /></van-area>
+		</div>
+		<script src="js/v2.6.10/vue.min.js"></script>
+		<script src="js/vant/vant.js"></script>
+		<script src="js/hehe.js"></script>
+		<script>
+			console.log(areaList)
+			Vue.use(vant);
+			var app = new Vue({
+				el: '#app',
+				data: {
+					date: '',
+					show: false,
+					value: '123',
+					errorInfo: '',
+					showKeyboard: true,
+				},
+				watch: {
+					value(value) {
+						console.log(value)
+						if (value.length === 6 && value !== '123456') {
+							this.errorInfo = '密码错误';
+						} else {
+							this.errorInfo = '';
+						}
+					},
+				},
+				methods: {
+					// 调用函数组件，弹出一个 Toast
+					btnClick() {
+						vant.Toast('提示');
+					},
+					formatDate(date) {
+						return `${date.getMonth() + 1}/${date.getDate()}`;
+					},
+					onConfirm(date) {
+						this.show = false;
+						this.date = this.formatDate(date);
+					},
+					city(data) {
+						console.log(data)
+					}
+				},
+			});
+		</script>
+	</body>
+</html>

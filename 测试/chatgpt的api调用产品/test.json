@@ -1,0 +1,542 @@
+getJson({
+	"likes": [{
+			"icon": "icon-xiaoxi",
+			"hehe": "这个是测试用的json文件数据，正式可删除",
+			"id": 0,
+			"name": "聊天",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "和AI进行一段聊天",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"接下来是一段和ai助理小奇的对话。ai助理小奇是聪慧有创造力，非常友善且有建设性的。\\n人: 你好啊。\\n小奇: 我是奇点智能开发的ai助理小奇。有什么我能帮到你的吗？\\n人: 去哪儿吃饭比较好啊？\\n小奇: \",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"接下来是一段和ai助理小奇的对话。ai助理小奇是聪慧有创造力，非常友善且有建设性的。\\n人: 你好啊。\\n小奇: 我是奇点智能开发的ai助理小奇。有什么我能帮到你的吗？\\n人: 去哪儿吃饭比较好啊？\\n小奇: \",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"接下来是一段和ai助理小奇的对话。ai助理小奇是聪慧有创造力，非常友善且有建设性的。\\n人: 你好啊。\\n小奇: 我是奇点智能开发的ai助理小奇。有什么我能帮到你的吗？\\n人: 去哪儿吃饭比较好啊？\\n小奇: \",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "接下来是一段和ai助理小奇的对话。ai助理小奇是聪慧有创造力，非常友善且有建设性的。\n人: 你好啊。\n小奇: 我是奇点智能开发的ai助理小奇。有什么我能帮到你的吗？\n人: 去哪儿吃饭比较好啊？\n小奇: ",
+				"default_reply": "您可以选择我们家附近的餐厅哦~",
+				"default_param": {
+					"generate_length": 100,
+					"top_p": 0.1,
+					"top_k": 10,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 2,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]",
+						"\n"
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-wenda",
+			"id": 1,
+			"name": "问答（Q&A）",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "根据问题进行回答",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"以下是一组问答。给出问题，ai会给出答案。\\n问：太阳从什么方位升起？\\n答：东方。\\n问：世界天气的推动力是？\\n答：\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"以下是一组问答。给出问题，ai会给出答案。\\n问：中国有多少人口？\\n答：14亿。\\n问：日本属于哪个大洲？\\n答：\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"以下是一组问答。给出问题，ai会给出答案。\\n问：中国有多少人口？\\n答：14亿。\\n问：日本属于哪个大洲？\\n答：\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "以下是一组问答。给出问题，ai会给出答案。\n问：太阳从什么方位升起？\n答：东方。\n问：世界天气的推动力是？\n答：",
+				"default_reply": "亚洲国家。",
+				"default_param": {
+					"generate_length": 100,
+					"top_p": 0.1,
+					"top_k": 10,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 2,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]",
+						"\n"
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-fanyi",
+			"id": 2,
+			"name": "中译英",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "把中文翻译为英文",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"中译英-中文:见到你非常开心。英文:\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"中译英-中文:见到你非常开心。英文:\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"中译英-中文:见到你非常开心。英文:\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "中译英-中文:见到你非常开心。英文:",
+				"default_reply": "It's nice to see you.",
+				"default_param": {
+					"generate_length": 100,
+					"top_p": 0.1,
+					"top_k": 10,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 2,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]"
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-fanyi",
+			"id": 3,
+			"name": "英译中",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "把英文翻译成中文",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"英译中-英文:Nice to meet you!中文:\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"英译中-英文:Nice to meet you!中文:\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"英译中-英文:Nice to meet you!中文:\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "英译中-英文:Nice to meet you!中文:",
+				"default_reply": "很高兴见到你！",
+				"default_param": {
+					"generate_length": 100,
+					"top_p": 0.1,
+					"top_k": 10,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 2,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]"
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-fenlei",
+			"id": 13,
+			"name": "分类",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "据引导语句的分类方式进行分类",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"以下是公司及其所属类别的列表\\nFaceBook:科技，社媒\\nLinkedIn：科技，社媒，求职\\nUber：运输，技术，市场\\nMcdonalds：食品，快餐，物流，餐厅\\n腾讯：\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"以下是公司及其所属类别的列表\\nFaceBook:科技，社媒\\nLinkedIn：科技，社媒，求职\\nUber：运输，技术，市场\\nMcdonalds：食品，快餐，物流，餐厅\\n腾讯：\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"以下是公司及其所属类别的列表\\nFaceBook:科技，社媒\\nLinkedIn：科技，社媒，求职\\nUber：运输，技术，市场\\nMcdonalds：食品，快餐，物流，餐厅\\n腾讯：\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "以下是公司及其所属类别的列表\nFaceBook:科技，社媒\nLinkedIn：科技，社媒，求职\nUber：运输，技术，市场\nMcdonalds：食品，快餐，物流，餐厅\n腾讯：",
+				"default_reply": "社交网络，游戏，电商",
+				"default_param": {
+					"generate_length": 100,
+					"top_p": 0.1,
+					"top_k": 10,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 2,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]",
+						"\n"
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-luzhiguanli",
+			"id": 14,
+			"name": "爱情电影制作器",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "通过引导语句联想给出爱情电影列表",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"列举10部爱情电影：\\n1.罗马假日\\n2.\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.4,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ],\n        \"bad_words\": [\n            \"（\",\n            \"[\",\n            \"(\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"列举10部爱情电影：\\n1.罗马假日\\n2.\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.4,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ],\n        \"bad_words\": [\n            \"（\",\n            \"[\",\n            \"(\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"列举10部爱情电影：\\n1.罗马假日\\n2.\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.4,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ],\n        \"bad_words\": [\n            \"（\",\n            \"[\",\n            \"(\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "列举10部爱情电影：\n1.罗马假日\n2.",
+				"default_reply": "乱世佳人\n3.魂断蓝桥\n4.泰坦尼克号\n5.卡萨布兰卡\n6．廊桥遗梦\n7．霸王别姬\n8．蒂凡尼的早餐\n9．大话西游\n10．恋恋笔记本 ",
+				"default_param": {
+					"generate_length": 100,
+					"top_p": 0.4,
+					"top_k": 50,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 2,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]"
+					],
+					"bad_words": [
+						"（",
+						"[",
+						"("
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-fuwuneirong",
+			"id": 5,
+			"name": "内容续写",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "续写一段文本",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"写一篇小文章。\\n今天的天气不错，我的心情\",\n    \"param\": {\n        \"generate_length\": 500,\n        \"top_p\": 0.9,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 10,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"写一篇小文章。\\n今天的天气不错，我的心情\",\n    \"param\": {\n        \"generate_length\": 500,\n        \"top_p\": 0.9,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 10,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"写一篇小文章。\\n今天的天气不错，我的心情\",\n    \"param\": {\n        \"generate_length\": 500,\n        \"top_p\": 0.9,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 10,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "写一篇小文章。\n今天的天气不错，我的心情",
+				"default_reply": "也很愉快，所以我们决定去放风筝吧！可是刚好赶上五一节放假了，商场里没有人，真是遗憾啊~不过还有别的办法吗？看这里。你一定会喜欢。\n准备材料:竹蜻蜓、线和电池若干个以及一只塑料袋或纸碗就行啦。把这些东西都装在一起后就可以出发喽！如果想要飞得更高更远一点呢话筒上套一布条这样声音效果还会好点哦！\n当然不是每一种游戏方法都能成功哟！但如果在尝试失败之前发现自己不适合这项运动又或者只玩一个类型的话那只能等下次再试试咯！记住不要因为一次的失败而觉得害怕不敢去进行任何一项运动！其实说来说去就是坚持嘛！只要一直不放弃最后总会有所收获呀嘻嘻嘻",
+				"default_param": {
+					"generate_length": 500,
+					"top_p": 0.9,
+					"top_k": 50,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 10,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]"
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-fuwuneirong",
+			"id": 4,
+			"name": "内容续写（情感指定）",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "用给定的情感风格续写一段文本",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"以风为主题写一个恐怖，惊悚的故事。\\n正文：远处吹来阵阵不祥的风\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 1,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"以风为主题写一个恐怖，惊悚的故事。\\n正文：远处吹来阵阵不祥的风\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 1,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"以风为主题写一个恐怖，惊悚的故事。\\n正文：远处吹来阵阵不祥的风\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 1,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "以风为主题写一个恐怖，惊悚的故事。\n正文：远处吹来阵阵不祥的风",
+				"default_reply": "。\n我的心咯噔了一下，难道是我听错了，我使劲揉了揉耳朵，可是那阵风还是在我耳旁不断的呼啸着。\n我赶紧把窗户关了起来。\n这风好像跟我有仇似的，我越关紧窗户它越是往里钻。\n我心里越来越慌，就像有什么不好的事情要发生了一样。\n这时候我听到了我爸的咳嗽声。\n他平时很少咳嗽的。\n但是这次不知道怎么回事，他的咳嗽声跟平常不一样。\n他的咳嗽声很大，就像野兽在低吼一般。\n听的我浑身都发抖，头皮发麻。\n我的心好像被针扎了一样，疼的厉害。\n我感觉到我爸已经走到了我的床前，他的脸色很是难看。\n他看着我，说了一句：“还不睡觉，看你眼睛都睁不开了。”\n我说了句“嗯”就钻进被子里，把眼睛闭上了。\n我爸看了我一眼，也没说话。\n我听到我爸咳嗽了几下，好像很吃力的样子，他把手伸进被子里，摸了摸我的头，然后就出了门。\n我听到关门的声音，我就知道他走了。\n我的心好像落了地。\n我赶紧钻进被窝里，把被子蒙在头上，把头蒙的死死的，我的呼吸声都能听到。\n我好像听到了我爸在外面的声音。\n过了一会，我就迷迷糊糊的睡着了。\n我做了一个很奇怪的梦。\n我梦见了我在一个黑漆漆的房子里。\n房子里没有灯，只有一个窗户透着光亮。",
+				"default_param": {
+					"generate_length": 100,
+					"top_p": 1,
+					"top_k": 50,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 2,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]"
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-fuwuneirong",
+			"id": 15,
+			"name": "第三人称转述",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "第一人称句子转写为第三人称",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"第一人称转化为第三人称\\n输入:我决定去吃个中饭。\\n输出:他决定去吃个中饭。\\n输入:我想好好学习。\\n输出:他想好好学习。\\n输入:我最大的担心是我写不好这个故事。\\n输出:他最大的担心是他写不好这个故事。\\n输入:我对我的能力很有自信。\\n输出:他对他的能力很有自信。\\n输入:我开始研究我自己的项目。\\n输出:\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"第一人称转化为第三人称\\n输入:我决定去吃个中饭。\\n输出:他决定去吃个中饭。\\n输入:我想好好学习。\\n输出:他想好好学习。\\n输入:我最大的担心是我写不好这个故事。\\n输出:他最大的担心是他写不好这个故事。\\n输入:我对我的能力很有自信。\\n输出:他对他的能力很有自信。\\n输入:我开始研究我自己的项目。\\n输出:\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"第一人称转化为第三人称\\n输入:我决定去吃个中饭。\\n输出:他决定去吃个中饭。\\n输入:我想好好学习。\\n输出:他想好好学习。\\n输入:我最大的担心是我写不好这个故事。\\n输出:他最大的担心是他写不好这个故事。\\n输入:我对我的能力很有自信。\\n输出:他对他的能力很有自信。\\n输入:我开始研究我自己的项目。\\n输出:\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "第一人称转化为第三人称\n输入:我决定去吃个中饭。\n输出:他决定去吃个中饭。\n输入:我想好好学习。\n输出:他想好好学习。\n输入:我最大的担心是我写不好这个故事。\n输出:他最大的担心是他写不好这个故事。\n输入:我对我的能力很有自信。\n输出:他对他的能力很有自信。\n输入:我开始研究我自己的项目。\n输出:",
+				"default_reply": "他开始研究他自己的项目。",
+				"default_param": {
+					"generate_length": 100,
+					"top_p": 0.1,
+					"top_k": 10,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 2,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]",
+						"\n"
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-airudiantubiaohuizhi-zhuanqu_meishicaipu",
+			"id": 7,
+			"name": "生成菜谱(西餐)",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "根据菜名和原料清单生成西餐菜谱",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"根据以下配料和说明编写食谱：\\n蕃茄肉酱意大利面\\n配料：\\n意面、蕃茄泥、牛肉馅、洋葱、西芹、胡萝卜、大蒜、香叶、黄油、胡椒粉\\n菜谱：\\n1.准备原料。\\n2.\",\n    \"param\": {\n        \"generate_length\": 256,\n        \"top_p\": 0.5,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"根据以下配料和说明编写食谱：\\n蕃茄肉酱意大利面\\n配料：\\n意面、蕃茄泥、牛肉馅、洋葱、西芹、胡萝卜、大蒜、香叶、黄油、胡椒粉\\n菜谱：\\n1.准备原料。\\n2.\",\n    \"param\": {\n        \"generate_length\": 256,\n        \"top_p\": 0.5,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"根据以下配料和说明编写食谱：\\n蕃茄肉酱意大利面\\n配料：\\n意面、蕃茄泥、牛肉馅、洋葱、西芹、胡萝卜、大蒜、香叶、黄油、胡椒粉\\n菜谱：\\n1.准备原料。\\n2.\",\n    \"param\": {\n        \"generate_length\": 256,\n        \"top_p\": 0.5,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "根据以下配料和说明编写食谱：\n蕃茄肉酱意大利面\n配料：\n意面、蕃茄泥、牛肉馅、洋葱、西芹、胡萝卜、大蒜、香叶、黄油、胡椒粉\n菜谱：\n1.准备原料。\n2.",
+				"default_reply": "将黄油放入锅中，用小火加热至溶化。\n3．放入洋葱末和蒜末炒出香味。\n4．加入西芹丁略微翻炒。\n5．再加入胡萝卜丁继续翻炒。\n6．然后加入番茄丁和盐，翻炒均匀后盛出备用。\n7．将意面放入开水中煮熟。\n8．在煮好的意面上淋入少许橄榄油拌匀。\n9．在煮好的面上码上一层马苏里拉奶酪丝。\n10．将煮好的意面和奶酪丝一起放入盘中，撒上一层帕玛森芝士碎。\n11．在盘边摆上焯烫过的西兰花，最后撒上罗勒叶做点缀即可。\n小贴士：\n1．如果没有黄油可以用其他食用油代替。\n2．为了增加口感，可以在煮意面时加一些橄榄油或者黄油。\n3．如果没有罗勒叶也可以不放，但是味道会差很多。\n4．在做这道菜时，最好不要放太多的调味品，以免掩盖掉食材本身的鲜味。 ",
+				"default_param": {
+					"generate_length": 256,
+					"top_p": 0.5,
+					"top_k": 50,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 2,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]"
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-airudiantubiaohuizhi-zhuanqu_meishicaipu",
+			"id": 6,
+			"name": "生成菜谱(中餐)",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "根据菜名和原料清单生成中餐菜谱",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"根据以下配料和说明编写食谱：\\n宫保鸡丁\\n配料：\\n花生、鸡腿肉、辣椒、生抽、白糖、小红辣椒\\n菜谱：\\n1.准备原料。\\n2.\",\n    \"param\": {\n        \"generate_length\": 256,\n        \"top_p\": 0.5,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"根据以下配料和说明编写食谱：\\n宫保鸡丁\\n配料：\\n花生、鸡腿肉、辣椒、生抽、白糖、小红辣椒\\n菜谱：\\n1.准备原料。\\n2.\",\n    \"param\": {\n        \"generate_length\": 256,\n        \"top_p\": 0.5,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"根据以下配料和说明编写食谱：\\n宫保鸡丁\\n配料：\\n花生、鸡腿肉、辣椒、生抽、白糖、小红辣椒\\n菜谱：\\n1.准备原料。\\n2.\",\n    \"param\": {\n        \"generate_length\": 256,\n        \"top_p\": 0.5,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "根据以下配料和说明编写食谱：\n宫保鸡丁\n配料：\n花生、鸡腿肉、辣椒、生抽、白糖、小红辣椒\n菜谱：\n1.准备原料。\n2.",
+				"default_reply": "鸡腿肉切丁，用生抽、白糖、红辣椒腌制片刻。\n3.锅内热油，放入干辣椒、花椒爆香。\n4.倒入鸡丁翻炒至变色后盛出备用。\n5.再在锅内热少许油，放入姜蒜末爆香。\n6.倒入鸡丁继续翻炒。\n7.加入适量的生抽、糖、盐调味。\n8.最后加入熟花生米，翻炒均匀即可。",
+				"default_param": {
+					"generate_length": 256,
+					"top_p": 0.5,
+					"top_k": 50,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 2,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]"
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-xiaoxi",
+			"id": 9,
+			"name": "餐厅评论创作者",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "根据给出重点来生成餐厅评论",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"根据这些重点写一篇餐馆评论。\\n名称：晋阳饭庄\\n重点：菜品地道，食材新鲜，价格小贵。\\n评论：\",\n    \"param\": {\n        \"generate_length\": 200,\n        \"top_p\": 1,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"根据这些重点写一篇餐馆评论。\\n名称：晋阳饭庄\\n重点：菜品地道，食材新鲜，价格小贵。\\n评论：\",\n    \"param\": {\n        \"generate_length\": 200,\n        \"top_p\": 1,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"根据这些重点写一篇餐馆评论。\\n名称：晋阳饭庄\\n重点：菜品地道，食材新鲜，价格小贵。\\n评论：\",\n    \"param\": {\n        \"generate_length\": 200,\n        \"top_p\": 1,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "根据这些重点写一篇餐馆评论。\n名称：晋阳饭庄\n重点：菜品地道，食材新鲜，价格小贵。\n评论：",
+				"default_reply": "晋祠有许多老字号名店都以当地特色的小吃为招牌做出了口碑（这个不是贬义）但是晋阳饭庄的确让我感受到了作为一个山西人应该吃的正宗本色。小店也干净整洁服务周道，点过几回凉粉和八宝粥之类的食品也非常美味！总体来讲是值得一去的饭店，当然如果预算有限就不要太苛求环境了…另外据说此处在修地铁不建议来吃饭呢233",
+				"default_param": {
+					"generate_length": 200,
+					"top_p": 1,
+					"top_k": 50,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 2,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]"
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-wenda",
+			"id": 16,
+			"name": "创建采访问题",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "根据要求生成采访问题的问题列表",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"为我与一位科幻作家的访谈创建一个问题列表:\\n1.\",\n    \"param\": {\n        \"generate_length\": 500,\n        \"top_p\": 0.5,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"为我与一位科幻作家的访谈创建一个问题列表:\\n1.\",\n    \"param\": {\n        \"generate_length\": 500,\n        \"top_p\": 0.5,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"为我与一位科幻作家的访谈创建一个问题列表:\\n1.\",\n    \"param\": {\n        \"generate_length\": 500,\n        \"top_p\": 0.5,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "为我与一位科幻作家的访谈创建一个问题列表:\n1.",
+				"default_reply": " 您如何定义自己作品中的“未来”？这个词是什么意思，它和现在有什么不同吗？\n2. 在创作过程中有没有发生过令你感到意外或震惊的事情呢？\n3. 当下科技对于人类社会发展是否会产生影响或者改变呢？\n4. 如果可以回到过去并且能够做些不一样的事儿那会怎么做？\n5。 最后一点，也是非常重要的一点：\n6． 除了您最初提到的那些内容之外，还想向读者传达一些其他信息吗？比如说我们希望人们去探索更多未知领域、更深层次地思考生命意义等等…\n7． 如果您愿意接受这些提问，那么请告诉我们吧！\n谢谢大家！",
+				"default_param": {
+					"generate_length": 500,
+					"top_p": 0.5,
+					"top_k": 50,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 2,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]"
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-anli",
+			"id": 10,
+			"name": "对对联",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "根据上联对出下联",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"上联：道不同躬身礼让\\n下联：\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"上联：道不同躬身礼让\\n下联：\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"上联：道不同躬身礼让\\n下联：\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "上联：道不同躬身礼让\n下联：",
+				"default_reply": "心相通携手同行",
+				"default_param": {
+					"generate_length": 100,
+					"top_p": 0.1,
+					"top_k": 10,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 2,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]",
+						"\n"
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-shiyongwendang",
+			"id": 8,
+			"name": "生成学习笔记",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "根据要求生成学习笔记",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"学习古罗马时，我应该知道哪些要点？\\n1.\",\n    \"param\": {\n        \"generate_length\": 500,\n        \"top_p\": 0.2,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"学习古罗马时，我应该知道哪些要点？\\n1.\",\n    \"param\": {\n        \"generate_length\": 500,\n        \"top_p\": 0.2,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"学习古罗马时，我应该知道哪些要点？\\n1.\",\n    \"param\": {\n        \"generate_length\": 500,\n        \"top_p\": 0.2,\n        \"top_k\": 50,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "学习古罗马时，我应该知道哪些要点？\n1.",
+				"default_reply": "  了解当时的历史背景。\n2． 了解地理位置和交通情况（主要是地形）。\n3． 了解当地人对于基督教的态度。\n",
+				"default_param": {
+					"generate_length": 500,
+					"top_p": 0.2,
+					"top_k": 50,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 2,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]"
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-shiyongwendang",
+			"id": 11,
+			"name": "人生哲理",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "根据引导语句来续写人生哲理",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"人生该明白的十个道理\\n1.\",\n    \"param\": {\n        \"generate_length\": 500,\n        \"top_p\": 0.55,\n        \"top_k\": 45,\n        \"repetition_penalty\": 1.2,\n        \"length_penalty\": 1,\n        \"min_len\": 10,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"人生该明白的十个道理\\n1.\",\n    \"param\": {\n        \"generate_length\": 500,\n        \"top_p\": 0.55,\n        \"top_k\": 45,\n        \"repetition_penalty\": 1.2,\n        \"length_penalty\": 1,\n        \"min_len\": 10,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"人生该明白的十个道理\\n1.\",\n    \"param\": {\n        \"generate_length\": 500,\n        \"top_p\": 0.55,\n        \"top_k\": 45,\n        \"repetition_penalty\": 1.2,\n        \"length_penalty\": 1,\n        \"min_len\": 10,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "人生该明白的十个道理\n1.",
+				"default_reply": " 有些事，想多了头疼，想通了心疼。所以，想不开就别想；得不到就别要，干嘛非得委屈自己。放下包袱，忘却一切烦恼，开心度过每一天。\n2． 别为难自己，活得像你自己就行了。如果真的有人可以让你依赖，那一定是你非常信任且依靠过的人。\n3． 没有什么人能一路单纯到底，但别忘记最初的自己。对他人多点宽容，也能让我们的生活更加快乐！\n4． 不要太在意别人的感受，因为只有你才是这个世界上最重要的主角。\n5． 很多东西就掌握在我们手中:比如快乐，你不快乐，谁会同情你的悲伤；比如坚强，你不坚强，谁会怜悯你的懦弱；比如努力，你不努力，谁会陪你原地停留…只有把命运掌握在自己手里，才能寻找到生命的闪光。\n6． 我不知道未来还会遇见怎样的挫折与困难，但我知道，无论何时何地，都要学会用一颗强大而感恩的心灵去面对。\n7． 生活原本沉闷，但跑起来就有风。愿你成为这样一个人：既不太熟络，又不会尴尬，不必取悦任何人，做着喜欢的事情，有着向往的小模样，永远朝气蓬勃，活力十足。\n8． 有时候不是不懂，只是不想懂；有时候不是不明白，而是明白了也无能为力，于是就保持了沉默。有些话，适合藏在心里；有些痛苦适合无声无息的忘记；有些回忆，只适合偶尔拿出来回味。很多事情，当经历过，自己知道就好。\n9． 有一种成功叫永不言弃；有一种成功叫继续努力。我们给自己一个承诺，即使它看似遥遥无期，也要比站在原地更接近幸福。\n10． 人活一世，美丑无所谓，良心才最美。再漂亮不知感恩，也是垃圾一堆；再普通心怀感激，也是高尚一枚。有恩报恩，必有回馈，以心换心，必有相随。",
+				"default_param": {
+					"generate_length": 500,
+					"top_p": 0.55,
+					"top_k": 45,
+					"repetition_penalty": 1.2,
+					"length_penalty": 1,
+					"min_len": 10,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]"
+					]
+				}
+			}
+		},
+		{
+			"icon": "icon-shiyongwendang",
+			"id": 12,
+			"name": "写五言诗",
+			"tagList": [
+				"1",
+				"2"
+			],
+			"desc": "根据引导语句来续写五言诗",
+			"code": {
+				"json": "{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"闻道巴山里，春船正好行。都将百年兴，一望九江城。\\n水槛温江口，茅堂石笋西。移船先主庙，洗药浣沙溪。\\n迟日江山丽，春风花草香。泥融飞燕子，沙暖睡鸳鸯。\\n寒食少天气，东风多柳花。小桃知客意，春尽始开花。\\n清风入堂来\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}",
+				"python": "import requests\nimport json\n\nurl = \"https://openapi-dev.singularity-ai.com/api/generateByKey\"\n\nheaders = {\n        \"Content-Type\": \"application/json\",\n        \"App-Key\": \"Bearer 你的apiKey\"\n    }\n\ndata = {\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"闻道巴山里，春船正好行。都将百年兴，一望九江城。\\n水槛温江口，茅堂石笋西。移船先主庙，洗药浣沙溪。\\n迟日江山丽，春风花草香。泥融飞燕子，沙暖睡鸳鸯。\\n寒食少天气，东风多柳花。小桃知客意，春尽始开花。\\n清风入堂来\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}\n\nresponse = requests.post(url=url, headers=headers, json=data)\ndt  = json.loads(response.text)\nprint(dt)",
+				"shell": "curl https://openapi-dev.singularity-ai.com/api/generateByKey\\\n-H \"Content-Type: application/json\" \\\n-H \"App-Key: Bearer 你的apikey\" \\\n-d '{\n    \"model_version\": \"模型版本\",\n    \"prompt\": \"闻道巴山里，春船正好行。都将百年兴，一望九江城。\\n水槛温江口，茅堂石笋西。移船先主庙，洗药浣沙溪。\\n迟日江山丽，春风花草香。泥融飞燕子，沙暖睡鸳鸯。\\n寒食少天气，东风多柳花。小桃知客意，春尽始开花。\\n清风入堂来\",\n    \"param\": {\n        \"generate_length\": 100,\n        \"top_p\": 0.1,\n        \"top_k\": 10,\n        \"repetition_penalty\": 1.1,\n        \"length_penalty\": 1,\n        \"min_len\": 2,\n        \"temperature\": 1,\n        \"end_words\": [\n            \"[EOS]\",\n            \"\\n\"\n        ]\n    }\n}'"
+			},
+			"model": {
+				"default_prompt": "闻道巴山里，春船正好行。都将百年兴，一望九江城。\n水槛温江口，茅堂石笋西。移船先主庙，洗药浣沙溪。\n迟日江山丽，春风花草香。泥融飞燕子，沙暖睡鸳鸯。\n寒食少天气，东风多柳花。小桃知客意，春尽始开花。\n清风入堂来",
+				"default_reply": "，疏雨过庭阴。落花犹在眼，芳草亦忘忧。",
+				"default_param": {
+					"generate_length": 100,
+					"top_p": 0.1,
+					"top_k": 10,
+					"repetition_penalty": 1.1,
+					"length_penalty": 1,
+					"min_len": 2,
+					"temperature": 1,
+					"end_words": [
+						"[EOS]",
+						"\n"
+					]
+				}
+			}
+		}
+	]
+})

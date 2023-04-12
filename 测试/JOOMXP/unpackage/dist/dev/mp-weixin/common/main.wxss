@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "myiconfont"; /* Project id 3879962 */
+  src: url('https://at.alicdn.com/t/c/font_3879962_7tdhqbsi98e.eot?t=1680077047589'); /* IE9 */
+  src: url('https://at.alicdn.com/t/c/font_3879962_7tdhqbsi98e.eot?t=1680077047589#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://at.alicdn.com/t/c/font_3879962_7tdhqbsi98e.woff2?t=1680077047589') format('woff2'),
+       url('https://at.alicdn.com/t/c/font_3879962_7tdhqbsi98e.woff?t=1680077047589') format('woff'),
+       url('https://at.alicdn.com/t/c/font_3879962_7tdhqbsi98e.ttf?t=1680077047589') format('truetype');
+}
+.myiconfont {
+  font-family: "myiconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-haoyou:before {
+  content: "\e784";
+}
+.icon-iconfontzhizuobiaozhunbduan36:before {
+  content: "\e6e9";
+}
+.icon-bofang:before {
+  content: "\e629";
+}
+.icon-quxiao:before {
+  content: "\e62a";
+}
+.icon-kefu2:before {
+  content: "\e60d";
+}
+.icon-xingxing:before {
+  content: "\e70b";
+}
+.icon-xingxing1:before {
+  content: "\e6ce";
+}
+.icon-fenxiang1:before {
+  content: "\e626";
+}
+.icon-fenxiang2:before {
+  content: "\e628";
+}
+.icon-fanhui1:before {
+  content: "\e605";
+}
+.icon-shanchu:before {
+  content: "\e8b6";
+}
+.icon-gouwugouwuchedinggou:before {
+  content: "\e682";
+}
+.icon-jiahao:before {
+  content: "\e726";
+}
+.icon-jianshao:before {
+  content: "\e8b1";
+}
+.icon-meiyoushuju:before {
+  content: "\e60b";
+}
+.icon-fanhui:before {
+  content: "\e625";
+}
+.icon-qingchu:before {
+  content: "\e62f";
+}
+.icon-fenxiaoshichang:before {
+  content: "\e783";
+}
+.icon-youjiantou:before {
+  content: "\e62b";
+}
+.icon-quanbudingdan:before {
+  content: "\e603";
+}
+.icon-weibiaoti2010104:before {
+  content: "\e63a";
+}
+.icon-dianhua:before {
+  content: "\e88b";
+}
+.icon-wode:before {
+  content: "\e681";
+}
+.icon-liebiao:before {
+  content: "\e620";
+}
+.icon-kefu:before {
+  content: "\e60a";
+}
+.icon-fenxiang:before {
+  content: "\e60f";
+}
+.icon-aixin1:before {
+  content: "\e8c3";
+}
+.icon-fankuibaozhang:before {
+  content: "\e608";
+}
+.icon-pinglun:before {
+  content: "\e891";
+}
+.icon-laba:before {
+  content: "\e602";
+}
+.icon-sheji:before {
+  content: "\e65e";
+}
+.icon-didiandingwei_o:before {
+  content: "\ebba";
+}
+.icon-dianpu:before {
+  content: "\e601";
+}
+.icon-wodeyouhuijuan:before {
+  content: "\e7ee";
+}
+.icon-shouye:before {
+  content: "\e630";
+}
+.icon-aixin:before {
+  content: "\e61f";
+}
+.icon-8:before {
+  content: "\e624";
+}
+.icon-yuyin_o:before {
+  content: "\eb6c";
+}
+.icon-sousuo:before {
+  content: "\e638";
+}
+.icon-weiju:before {
+  content: "\e600";
+}
+.icon-erweima:before {
+  content: "\e7ad";
+}
+.icon-chongzhi:before {
+  content: "\e610";
+}
+.icon-tuihuo:before {
+  content: "\e607";
+}
+.icon-shezhi:before {
+  content: "\e627";
+}
+.icon-xiaoxi:before {
+  content: "\e611";
+}
+.icon-daifahuo:before {
+  content: "\e618";
+}
+.icon-daishouhuo:before {
+  content: "\e62c";
+}
+.icon-daifukuan:before {
+  content: "\e61d";
+}
+.icon-dingweixiao:before {
+  content: "\e87e";
+}
+uni-page-body {
+	font-size: 28rpx;
+}
+page {
+	background: #f5f5f5;
+	color: #4a4a4a;
+}
+uni-page-body {
+	background: #f5f5f5;
+	min-height: 100%;
+}
+
+/*每个页面公共css */
+
+/* 解决小程序和app滚动条的问题 */
+::-webkit-scrollbar {
+	display: none;
+	width: 0 !important;
+	height: 0 !important;
+	-webkit-appearance: none;
+	background: transparent;
+	color: transparent;
+}
+
+
+
+/* 解决H5 的问题 */
+.bg-white {
+	background-color: #fff !important;
+}
+.border-radius-li {
+	border-radius: 20rpx;
+}
+.margin-right-li {
+	margin-right: 20rpx;
+}
+.pading-main-all{
+	    padding: 20rpx;
+}
+.posrt {
+	position: relative;
+}
+.overh {
+	overflow: hidden;
+}
+.br {
+	border: 2rpx solid #f7f7f7;
+}
+.bgcolor{
+	background: white;
+}
+.No_one_hang {
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.No_two_hang {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	white-space: initial;
+}
+.No_three_hang {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	white-space: initial;
+}
+

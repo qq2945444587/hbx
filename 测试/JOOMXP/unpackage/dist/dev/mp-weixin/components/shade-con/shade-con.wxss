@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.zhezhao.data-v-6fd8388a {
+  transition: all 0.25s linear;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 300;
+}
+.gg_guige.data-v-6fd8388a {
+  padding: 20rpx;
+  box-sizing: border-box;
+  position: fixed;
+  background: #f5f5f5;
+  z-index: 301;
+  bottom: 0px;
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  transition: all 0.25s linear;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.gg_active .zhezhao.data-v-6fd8388a {
+  opacity: 1;
+  pointer-events: auto;
+}
+.gg_active .gg_guige.data-v-6fd8388a {
+  -webkit-transform: none;
+  transform: none;
+}
+.qpl_zz_box.data-v-6fd8388a {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, 48%);
+  grid-row-gap: 20rpx;
+}
+.qpl_nbmber_z.data-v-6fd8388a {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20rpx;
+}
+.qpl_nbmber_z text.data-v-6fd8388a:nth-child(2) {
+  color: #f6c133;
+  font-weight: bold;
+  font-size: 36rpx;
+  margin-left: 10rpx;
+}
+.scroll-Y.data-v-6fd8388a {
+  max-height: 50vh;
+  background-color: #f5f5f5;
+}
+.yhj_box.data-v-6fd8388a {
+  display: flex;
+  justify-content: space-between;
+  height: 182rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.yhj_money.data-v-6fd8388a {
+  width: calc(100% - 144rpx);
+  height: 100%;
+  padding: 20rpx 10rpx 20rpx 20rpx;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.yhj_type.data-v-6fd8388a {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 144rpx;
+  height: 100%;
+}
+.share_li.data-v-6fd8388a {
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+  height: 88rpx;
+  background: white;
+  box-sizing: initial;
+  font-size: 28rpx;
+}
+.share_li.data-v-6fd8388a:nth-child(1) {
+  border-bottom: 2rpx solid #f0f0f0;
+}
+.share_li image.data-v-6fd8388a {
+  width: 82rpx;
+  height: 82rpx;
+  margin-right: 20rpx;
+}
+uni-button.data-v-6fd8388a:after {
+  border: none;
+}
+button.data-v-6fd8388a::after {
+  border: none;
+}
+

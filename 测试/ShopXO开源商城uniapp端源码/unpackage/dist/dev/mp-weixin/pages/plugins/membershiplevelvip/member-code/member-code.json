@@ -1,0 +1,9 @@
+{
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText": "会员码",
+  "usingComponents": {
+    "w-barcode": "/uni_modules/wmf-code/components/w-barcode/w-barcode",
+    "w-qrcode": "/uni_modules/wmf-code/components/w-qrcode/w-qrcode",
+    "component-no-data": "/components/no-data/no-data"
+  }
+}

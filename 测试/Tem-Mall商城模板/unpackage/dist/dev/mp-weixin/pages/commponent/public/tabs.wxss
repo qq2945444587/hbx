@@ -1,0 +1,30 @@
+.tabs.data-v-760fcb56 {
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+}
+.tabs_list.data-v-760fcb56 {
+  flex: 1;
+  text-align: center;
+  font-size: 28rpx;
+  position: relative;
+  color: #333;
+}
+.active.data-v-760fcb56 {
+  font-weight: bold;
+  color: #DD4F42;
+  width: 50rpx;
+  height: 5rpx;
+  border-radius: 20rpx;
+  background-color: #DD4F42;
+  position: absolute;
+  bottom: 10rpx;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  transition: all 0.3s;
+}
+

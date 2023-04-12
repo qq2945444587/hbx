@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * 使用的时候，请将下面的一行复制到您的uniapp项目根目录的uni.scss中即可
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+.service-contract-wrap {
+  background-color: #fff;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  min-height: 850rpx;
+  border-radius: 20rpx;
+  width: 610rpx;
+}
+.service-contract-wrap .service-head-img {
+  width: 610rpx;
+}
+.service-contract-wrap .service-title {
+  font-size: 35rpx;
+  font-weight: bold;
+  color: white;
+  line-height: 42rpx;
+  background: linear-gradient(180deg, #3e3019 0%, #6d5028 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30rpx;
+}
+.service-contract-wrap .service-content {
+  text-align: left;
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #666666;
+  line-height: 50rpx;
+  padding: 0 40rpx;
+}
+.service-contract-wrap .service-tip {
+  text-align: left;
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #9a9a9a;
+  line-height: 50rpx;
+  padding: 0 40rpx;
+}
+.service-contract-wrap .btn-box {
+  padding: 40rpx;
+}
+.service-contract-wrap .btn-box .cancel-btn {
+  width: 248rpx;
+  height: 70rpx;
+  border: 1rpx solid #eab663;
+  border-radius: 35rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #eab663;
+  background-color: #fff;
+}
+.service-contract-wrap .btn-box .agree-btn {
+  width: 300rpx;
+  line-height: 70rpx;
+  background: linear-gradient(90deg, #e9b561, #eecc8a);
+  border-radius: 35rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: white;
+}
+

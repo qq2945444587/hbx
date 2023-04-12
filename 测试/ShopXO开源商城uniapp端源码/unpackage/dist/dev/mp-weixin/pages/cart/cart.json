@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "购物车",
+  "usingComponents": {
+    "component-quick-nav": "/components/quick-nav/quick-nav",
+    "component-cart": "/components/cart/cart"
+  }
+}

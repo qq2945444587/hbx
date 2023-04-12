@@ -1,0 +1,12 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "商品详情",
+  "usingComponents": {
+    "uni-rate": "/uni_modules/uni-rate/components/uni-rate/uni-rate",
+    "mp-html": "/uni_modules/mp-html/components/mp-html/mp-html",
+    "index-newshop": "/components/index-newshop/index-newshop",
+    "pop-classify": "/components/pop-classify/pop-classify",
+    "shade-con": "/components/shade-con/shade-con"
+  }
+}

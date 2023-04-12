@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "确认订单",
+  "navigationBarBackgroundColor": "#F8F8F8",
+  "usingComponents": {
+    "coupon": "/pages/commponent/public/coupon"
+  }
+}

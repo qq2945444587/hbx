@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "search": "/components/search/index",
+    "box-title": "/components/boxTitle/index"
+  }
+}

@@ -1,0 +1,4 @@
+.bottom-fixed button {
+    width: calc(50% - 10rpx);
+}
+

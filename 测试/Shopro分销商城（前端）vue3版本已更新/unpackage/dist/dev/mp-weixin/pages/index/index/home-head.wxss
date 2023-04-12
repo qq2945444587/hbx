@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * 使用的时候，请将下面的一行复制到您的uniapp项目根目录的uni.scss中即可
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+.banner-swiper-wrap.data-v-34f9212b {
+  height: 520rpx;
+  position: relative;
+  z-index: 100;
+}
+.banner-swiper-wrap .search-box.data-v-34f9212b {
+  width: 66rpx;
+  height: 66rpx;
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 100%;
+}
+.banner-swiper-wrap .hover-search.data-v-34f9212b {
+  background: rgba(255, 255, 255, 0.18);
+}
+.u-navbar.data-v-34f9212b {
+  width: 100%;
+}
+.u-navbar-fixed.data-v-34f9212b {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 991;
+}
+.u-status-bar.data-v-34f9212b {
+  width: 100%;
+}
+.u-navbar-inner.data-v-34f9212b {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+.u-back-wrap.data-v-34f9212b {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  flex-grow: 0;
+  padding: 14rpx 14rpx 14rpx 24rpx;
+}
+

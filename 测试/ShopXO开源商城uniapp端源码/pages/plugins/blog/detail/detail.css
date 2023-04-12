@@ -1,0 +1,34 @@
+/**
+ * 标题内容
+ */
+.title-content .blog-title {
+    width: calc(100% - 70rpx);
+}
+.title-content .blog-share {
+    top: calc(50% - 20rpx);
+    right: 0;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+.title-content .blog-share image {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+/**
+ * 商品
+ */
+.goods-list .item {
+    width: calc(50% - 10rpx);
+}
+.goods-list .item:nth-child(2n) {
+    float: right;
+}
+.goods-list .item:nth-child(2n+1) {
+    float: left;
+}
+.goods-list .item .goods-img {
+    width: 100%;
+    height: 380rpx !important;
+}

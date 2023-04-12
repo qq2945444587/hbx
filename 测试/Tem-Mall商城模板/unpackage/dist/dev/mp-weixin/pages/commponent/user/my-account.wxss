@@ -1,0 +1,25 @@
+.my_money.data-v-5552767c {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.menu_btnbox.data-v-5552767c {
+  display: flex;
+  align-items: center;
+}
+.menu_btns.data-v-5552767c {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin: 30rpx 0;
+  font-size: 24rpx;
+  color: #75787d;
+  line-height: 40rpx;
+}
+.menu_btns .p1.data-v-5552767c {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+

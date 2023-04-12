@@ -1,0 +1,1 @@
+ // localStorage.setItem('coke', JSON.stringify('11222'))
